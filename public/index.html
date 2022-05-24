@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luke Bodwell</title>
         <script type="text/javascript" src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -22,6 +23,14 @@
                     </h2>
                 </div>
             </div>
+            <div class="socials">
+                <a class="social-link" href="https://www.linkedin.com/in/lbodwell/">
+                    <i class="social devicon-linkedin-plain colored"></i>
+                </a>
+                <a class="social-link" href="https://github.com/lbodwell">
+                    <i class="social devicon-github-original colored"></i>
+                </a>
+            </div>
             <div class="projects-container">
                 <h1>Projects</h1>
                 <div class="projects">
@@ -31,10 +40,22 @@
                         </div>
                         <div class="separator"></div>
                         <div class="project-info">
-                            <div class="project-title">
-                                <h2>
-                                    <code>> Relatable DAW</code>
-                                </h2>
+                            <div class="project-header">
+                                <div class="project-title-container">
+                                    <h2 class ="project-title">
+                                        <code>> Relatable DAW</code>
+                                    </h2>
+                                    <div class="project-types">
+                                        <!-- Code icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
+                                        </svg>
+                                        <!-- Audio icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                                        </svg>
+                                    </div>
+                                </div>
                                 <div class="project-tags">
                                     <h3 class="project-tag">React</h3>
                                     <h3 class="project-tag">Material UI</h3>
@@ -45,29 +66,20 @@
                                     <h3 class="project-tag">OAuth2</h3>
                                     <h3 class="project-tag">Music</h3>
                                 </div>
-                                <div class="project-types">
-                                    <!-- Code icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
-                                    </svg>
-                                    <!-- Audio icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
-                                    </svg>
-                                </div>
+                                
                             </div>
-                            <p>
-                                Relatable DAW is an online, collaborative, interactive digital audio workstation developed with the MERN stack.
-                                Its goal is to teach music theory concepts through relation-based composition. Audio synthesis is handled 
-                                with Tone.js, and the combination of a NoSQL database and web sockets allow users to save, share, and collaborate
-                                simultaneously on projects after signing in via Google OAuth. This project was developed and iterated on based on 
-                                the insights of a professional high school band director.
+                            <p class="project-desc">
+                                Relatable DAW is an online, collaborative, interactive digital audio workstation developed with the MERN stack,
+                                originally created as part of an IQP at WPI as a solo effort. Its goal is to teach music theory concepts through
+                                relation-based composition. Audio synthesis is handled with Tone.js, and the combination of a NoSQL database and
+                                web sockets allow users to save, share, and collaborate simultaneously on projects after signing in via Google OAuth.
+                                This project was developed and iterated on based on the insights of a professional high school band director.
                             </p>
                             <div class="project-links">
                                 <a class="btn" href="https://relatable-daw.com" target="_blank">Live Demo</a>
                                 <a class="btn" href="https://drive.google.com/file/d/1R21yoplPYTj6aw2hVH3COGZ260A-Z0TO/view" target="_blank">Video</a>
                                 <a class="btn" href="https://github.com/lbodwell/Relatable-DAW" target="_blank">Code</a>
-                                <a class="btn" href="https://drive.google.com/u/0/uc?id=1kIK0K5_Zch1MQtdF1G2JEuVO7eWrT9Fq&export=download" target="_blank">Research Paper</a>
+                                <a class="btn" href="https://drive.google.com/file/d/1kIK0K5_Zch1MQtdF1G2JEuVO7eWrT9Fq/view?usp=sharing" target="_blank">Paper</a>
                             </div>
                         </div>
                     </div>
@@ -77,10 +89,26 @@
                         </div>
                         <div class="separator"></div>
                         <div class="project-info">
-                            <div class="project-title">
-                                <h2>
-                                    <code>> GeoBlade</code>
-                                </h2>
+                            <div class="project-header">
+                                <div class="project-title-container">
+                                    <h2 class="project-title">
+                                        <code>> GeoBlade</code>
+                                    </h2>
+                                    <div class="project-types">
+                                        <!-- Code icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
+                                        </svg>
+                                        <!-- Game icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" />
+                                        </svg>
+                                        <!-- Audio icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                                        </svg>
+                                    </div>
+                                </div>
                                 <div class="project-tags">
                                     <h3 class="project-tag">Unity</h3>
                                     <h3 class="project-tag">C#</h3>
@@ -90,82 +118,125 @@
                                     <h3 class="project-tag">Adventure</h3>
                                     <h3 class="project-tag">Puzzles</h3>
                                 </div>
-                                <div class="project-types">
-                                    <!-- Code icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
-                                    </svg>
-                                    <!-- Game icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" />
-                                    </svg>
-                                    <!-- Audio icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
-                                    </svg>
-                                </div>
                             </div>
-                            <p>
-                                GeoBlade is a 3D third-person action-adventure game currently in development using Unity, in which audio and music
-                                play a major design role. The game features a rich location-driven narrative complete with original music, fully
-                                voice-acted dialogue, and dynamic sound effects implemented in Audiokinetic Wwise. Players will face challenges
-                                in the form of both combat and puzzles as they meet friends, foes, and those in between while unravelling the truth
-                                of this mysterious world.
+                            <p class="project-desc">
+                                GeoBlade is a 3D third-person action-adventure game in which audio and music play a major design role. It is
+                                developed using Unity and was originally created as part of an MQP at WPI with two other students. The game features a rich,
+                                location-driven narrative complete with original music, fully voice-acted dialogue, and dynamic sound effects
+                                implemented in Audiokinetic Wwise. Players will face challenges in the form of both melee combat and puzzles
+                                as they meet friends, foes, and those in between while unravelling the truth of this mysterious world.
                             </p>
                             <div class="project-links">
-                                <a class="btn">Download</a>
-                                <a class="btn">Trailer</a>
-                                <a class="btn">Code</a>
-                                <a class="btn">Research Paper</a>
+                                <a class="btn" href="https://drive.google.com/uc?export=download&id=1NaaF95as4VQfs77qWxpXGth7htp-jReu" target="_blank">Demo</a>
+                                <a class="btn" href="https://www.youtube.com/watch?v=z4BUox3BMmw&ab_channel=LukeBodwell" target="_blank">Trailer</a>
+                                <a class="btn" href="https://github.com/lbodwell/GeoBlade" target="_blank">Code</a>
+                                <a class="btn" href="https://drive.google.com/file/d/1RJBenakGHWUycIhU66fsQ0MVFAEg9TuQ/view?usp=sharing" target="_blank">Paper</a>
                             </div>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project-image">
-                            <img src="images/geoblade.png"></img>
+                            <img src=""></img>
                         </div>
                         <div class="separator"></div>
                         <div class="project-info">
-                            <div class="project-title">
-                                <h2>
-                                    <code>> Daybreak</code>
-                                </h2>
+                            <div class="project-header">
+                                <div class="project-title-container">
+                                    <h2 class="project-title">
+                                        <code>> Daybreak</code>
+                                    </h2>
+                                    <div class="project-types">
+                                        <!-- Code icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
+                                        </svg>
+                                        <!-- Game icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" />
+                                        </svg>
+                                        <!-- Audio icon -->
+                                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                                        </svg>
+                                    </div>
+                                </div>
                                 <div class="project-tags">
                                     <h3 class="project-tag">UE4</h3>
                                     <h3 class="project-tag">C++</h3>
                                     <h3 class="project-tag">Hack-n-Slash</h3>
-                                </div>
-                                <div class="project-types">
-                                    <!-- Code icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
-                                    </svg>
-                                    <!-- Game icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" />
-                                    </svg>
-                                    <!-- Audio icon -->
-                                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
-                                    </svg>
+                                    <h3 class="project-tag">Realistic</h3>
+                                    <h3 class="project-tag">Horror</h3>
+                                    <h3 class="project-tag">Music</h3>
                                 </div>
                             </div>
-                            <p>Project description goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                                optio, eaque rerum! Provident similique accusantium nemo autem.</h>
+                            <p class="project-desc">
+                                Can you survive until daybreak? Only you stand between the mortal and dark realms, defending a portal that should
+                                have never been opened. At nightfall, you must fight to stop the minions of Nightwatch from approaching the portal.
+                                At daybreak, use the cover of sunlight to fortify the castle keep and yourself. For the sake of humanity, find a way
+                                to stop the onslaught—and whatever you do, don't get stuck outside at night. Daybreak is a 3D third-person Hack-n-Slash
+                                with a realistic art style and some light horror elements developed in Unreal Engine by a team of four programmers and
+                                two artists. The main gameplay loop involves a day/night cycle using UE4's Sky Atmosphere system.
                             <div class="project-links">
-                                <a class="btn">Download</a>
-                                <a class="btn">Video</a>
-                                <a class="btn">Code</a>
+                                <a class="btn" href="https://drive.google.com/u/0/uc?id=1Fbg0_M3NbGm0J1hJRZTJgx4ERcoVPHK_&export=download" target="_blank">Demo</a>
+                                <a class="btn" href="https://drive.google.com/file/d/19BDO5TsDU37A0evEIARC4PAQ7SqZgs8j/view" target="_blank">Video</a>
+                                <a class="btn" href=" https://sites.google.com/view/daybreak-studios" target="_blank">Website</a>
+                                <a class="btn" href="https://github.com/lbodwell/Daybreak" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="skills">
-                <h1>Skills</h1>
+            <div class="skills-container">
+                <h1 class="skills-title">Skills</h1>
+                <a class="btn" href="https://drive.google.com/file/d/1XnEdF1O0KI7cwZnmSWpdDQFVqUG5iKaQ/view?usp=sharing" target="_blank">Resume</a>
                 <div class="skills">
+                    <!-- Languages -->
+                    <i class="skill devicon-java-plain colored"></i>
+                    <i class="skill devicon-javascript-plain colored"></i>
+                    <i class="skill devicon-typescript-plain colored"></i>
+                    <i class="skill devicon-csharp-plain colored"></i>
+                    <i class="skill devicon-c-plain colored"></i>
+                    <i class="skill devicon-cplusplus-plain colored"></i>
+                    <i class="skill devicon-kotlin-plain colored"></i>
+                    <i class="skill devicon-python-plain colored"></i>
+                    <i class="skill devicon-html5-plain colored"></i>
+                    <i class="skill devicon-css3-plain colored"></i>
+
+                    <!-- Frameworks -->
+                    <i class="skill devicon-react-original colored"></i>
+                    <i class="skill devicon-nodejs-plain colored"></i>
+                    <i class="skill devicon-express-original"></i>
+                    <i class="skill devicon-electron-original colored"></i>
+                    <i class="skill devicon-firebase-plain colored"></i>
+                    <i class="skill devicon-mongodb-plain colored"></i>
+                    <i class="skill devicon-mysql-plain colored"></i>
+                    <i class="skill devicon-materialui-plain colored"></i>
+                    <i class="skill devicon-bootstrap-plain colored"></i>
+                    <i class="skill devicon-unity-original colored"></i>
+                    <i class="skill devicon-unrealengine-original colored"></i>
+                    
+                    <!-- Dev-ops -->
+                    <i class="skill devicon-git-plain colored"></i>
+                    <i class="skill devicon-digitalocean-plain colored"></i>
+                    <i class="skill devicon-heroku-original colored"></i>
+
+                    <i class="skill devicon-nginx-original colored"></i>
+                    
+                    <!-- Operating Systems -->
+                    <i class="skill devicon-windows8-original colored"></i>
+                    <i class="skill devicon-linux-plain colored"></i>
+                    <i class="skill devicon-android-plain colored"></i>
+
+                    <!-- IDEs -->
+                    <i class="skill devicon-vscode-plain colored"></i>
+                    <i class="skill devicon-visualstudio-plain colored"></i>
+                    <i class="skill devicon-jetbrains-plain colored"></i>
+                    <i class="skill devicon-intellij-plain colored"></i>
+                    <i class="skill devicon-androidstudio-plain colored"></i>
+                    
+                    <!-- Audio -->
+                    <img class="skill" src="https://www.audiokinetic.com/images/branding/Wwise-Color-Bubble.png" width="72"/>
+                    <img class="skill" src="https://www.freeiconspng.com/uploads/fl-studio-icon-5.png" width="72"/>
                 </div>
             </div>
         </content>
