@@ -10,9 +10,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h3>Header</h3>
-        </header>
+        <header></header>
         <content>
             <div class="intro">
                 <h1>Hi, I'm Luke!</h1>
@@ -23,15 +21,18 @@
                     </h2>
                 </div>
             </div>
-            <div class="socials">
-                <a class="social-link" href="https://www.linkedin.com/in/lbodwell/">
-                    <i class="social devicon-linkedin-plain colored"></i>
-                </a>
-                <a class="social-link" href="https://github.com/lbodwell">
-                    <i class="social devicon-github-original colored"></i>
-                </a>
-            </div>
-            <div class="projects-container">
+            <section class="socials-container">
+                <div class="socials">
+                    <a class="social-link" href="https://www.linkedin.com/in/lbodwell/" target="_blank">
+                        <i class="social devicon-linkedin-plain colored"></i>
+                    </a>
+                    <a class="social-link" href="https://github.com/lbodwell" target="_blank">
+                        <i class="social devicon-github-original colored"></i>
+                    </a>
+                </div>
+                <h3>lukebodwell@gmail.com</h3>
+            </section>
+            <section class="projects-container">
                 <h1>Projects</h1>
                 <div class="projects">
                     <div class="project">
@@ -59,11 +60,11 @@
                                 <div class="project-tags">
                                     <h3 class="project-tag">React</h3>
                                     <h3 class="project-tag">Material UI</h3>
-                                    <h3 class="project-tag">Tone.js</h3>
                                     <h3 class="project-tag">Node.js</h3>
-                                    <h3 class="project-tag">socket.io</h3>
                                     <h3 class="project-tag">MongoDB</h3>
+                                    <h3 class="project-tag">socket.io</h3>
                                     <h3 class="project-tag">OAuth2</h3>
+                                    <h3 class="project-tag">Tone.js</h3>
                                     <h3 class="project-tag">Music</h3>
                                 </div>
                                 
@@ -121,9 +122,10 @@
                             </div>
                             <p class="project-desc">
                                 GeoBlade is a 3D third-person action-adventure game in which audio and music play a major design role. It is
-                                developed using Unity and was originally created as part of an MQP at WPI with two other students. The game features a rich,
+                                developed using Unity and was originally created as part of an MQP at WPI with two other students. I focused
+                                mostly on gameplay programming, systems programming, audio, music, and writing. The game features a rich,
                                 location-driven narrative complete with original music, fully voice-acted dialogue, and dynamic sound effects
-                                implemented in Audiokinetic Wwise. Players will face challenges in the form of both melee combat and puzzles
+                                implemented in Audiokinetic  Wwise. Players will face challenges in the form of both melee combat and puzzles
                                 as they meet friends, foes, and those in between while unravelling the truth of this mysterious world.
                             </p>
                             <div class="project-links">
@@ -175,8 +177,8 @@
                                 have never been opened. At nightfall, you must fight to stop the minions of Nightwatch from approaching the portal.
                                 At daybreak, use the cover of sunlight to fortify the castle keep and yourself. For the sake of humanity, find a way
                                 to stop the onslaught—and whatever you do, don't get stuck outside at night. Daybreak is a 3D third-person Hack-n-Slash
-                                with a realistic art style and some light horror elements developed in Unreal Engine by a team of four programmers and
-                                two artists. The main gameplay loop involves a dynamic day/night cycle using UE4's Sky Atmosphere system.
+                                with a realistic art style and some light horror elements developed in Unreal Engine with a team of three other programmers
+                                and two artists. I worked primarily on the day/night cycle, gameplay programming, audio, and music.
                             </p>
                             <div class="project-links">
                                 <a class="btn" href="https://drive.google.com/u/0/uc?id=1Fbg0_M3NbGm0J1hJRZTJgx4ERcoVPHK_&export=download" target="_blank">Demo</a>
@@ -196,7 +198,7 @@
                             <div class="project-header">
                                 <div class="project-title-container">
                                     <h2 class="project-title">
-                                        <code>> Soft Eng Project</code>
+                                        <code>> Hospital Pathfinding</code>
                                     </h2>
                                     <div class="project-types">
                                         <!-- Code icon -->
@@ -206,20 +208,25 @@
                                     </div>
                                 </div>
                                 <div class="project-tags">
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
+                                    <h3 class="project-tag">Desktop</h3>
+                                    <h3 class="project-tag">Java</h3>
+                                    <h3 class="project-tag">JavaFX</h3>
+                                    <h3 class="project-tag">MySQL</h3>
+                                    <h3 class="project-tag">A*</h3>
+                                    <h3 class="project-tag">Scrum</h3>
                                 </div>
                             </div>
                             <p class="project-desc">
-                                Project description goes here
+                                This application was developed as part of a software engineering class at WPI with a team of seven other students.
+                                I served as the assistant lead developer and database engineer of my team, assigning tasks to others and overseeing
+                                the database, user authentication, and notifications systems. The application features custom user authentication using
+                                the BCrypt hashing algorithm and various levels of user priveleges. Admins are able to place nodes representing waypoints
+                                along a map, create connections between them, and manage any other data, nurses are able to make and receive service requests,
+                                and regular users can use the map to get directions to their desired location.
                             </p>
                             <div class="project-links">
                                 <a class="btn" href="#" target="_blank">Video</a>
-                                <a class="btn" href="#" target="_blank">Code</a>
+                                <a class="btn" href="https://github.com/CS3733-D20-Team-L/CS3733-D20-Team-L-Project-BWD20" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +240,7 @@
                             <div class="project-header">
                                 <div class="project-title-container">
                                     <h2 class="project-title">
-                                        <code>> Mobile Project</code>
+                                        <code>> Sticker/Chat App</code>
                                     </h2>
                                     <div class="project-types">
                                         <!-- Code icon -->
@@ -243,16 +250,20 @@
                                     </div>
                                 </div>
                                 <div class="project-tags">
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
+                                    <h3 class="project-tag">Android</h3>
+                                    <h3 class="project-tag">Kotlin</h3>
+                                    <h3 class="project-tag">Firebase</h3>
+                                    <h3 class="project-tag">Chat</h3>
+                                    <h3 class="project-tag">Stickers</h3>
                                 </div>
                             </div>
                             <p class="project-desc">
-                                Project description goes here
+                                This is a native Android application that was developed as part of a mobile/ubiquitous computing class at WPI with
+                                two other students. I worked primarily on the backend of the application but also assisted with hooking things up on
+                                the frontend. Firebase was used to handle both authentication and realtime data storage. The app allows users to log
+                                in using either a Google account or an email and password, then choose from a series of event-themed stickers to send
+                                to a friend. A personalized message and an accompanying photo taken with the device's camera can be sent alongside the
+                                sticker, and the two users can then follow up on the exchange with further realtime chat.
                             <div class="project-links">
                                 <a class="btn" href="#" target="_blank">Video</a>
                                 <a class="btn" href="#" target="_blank">Code</a>
@@ -269,7 +280,7 @@
                             <div class="project-header">
                                 <div class="project-title-container">
                                     <h2 class="project-title">
-                                        <code>> Graphics Project</code>
+                                        <code>> Mobile Renderer</code>
                                     </h2>
                                     <div class="project-types">
                                         <!-- Code icon -->
@@ -279,16 +290,23 @@
                                     </div>
                                 </div>
                                 <div class="project-tags">
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
-                                    <h3 class="project-tag">TODO</h3>
+                                    <h3 class="project-tag">JavaScript</h3>
+                                    <h3 class="project-tag">WebGL</h3>
+                                    <h3 class="project-tag">Graphics</h3>
+                                    <h3 class="project-tag">Rendering</h3>
+                                    <h3 class="project-tag">Shaders</h3>
+                                    <h3 class="project-tag">Lighting</h3>
                                 </div>
                             </div>
                             <p class="project-desc">
-                                Project description goes here
+                                This project was created as part of a computer graphics class at WPI. It uses WebGL, vanilla JavaScript, and
+                                custom vertex/fragment shaders to hierarchically render a spinning mobile comprised of cubes and spheres of
+                                various materials, each with unique ambient, specular, and diffuse lighting behavior. The renderer implements
+                                toggleable shadows, textures, and reflection and refraction using a cubemap, as well as both flat and Gouroud
+                                shading. The mobile is lit using a point light with an adjustable position and cone angle, and the perspective
+                                of the camera can be moved to any position within the confines of the scene. Please note that the sphere model
+                                file must be uploaded to the demo site manually. It can be downloaded <a href="#" target="_blank">here</a>.
+                            </p>
                             <div class="project-links">
                                 <a class="btn" href="#" target="_blank">Live Demo</a>
                                 <a class="btn" href="#" target="_blank">Video</a>
@@ -297,8 +315,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="skills-container">
+            </section>
+            <section class="skills-container">
                 <h1 class="skills-title">Skills</h1>
                 <a class="btn" href="https://drive.google.com/file/d/1XnEdF1O0KI7cwZnmSWpdDQFVqUG5iKaQ/view?usp=sharing" target="_blank">Resume</a>
                 <div class="skills">
@@ -350,10 +368,8 @@
                     <img class="skill" src="https://www.audiokinetic.com/images/branding/Wwise-Color-Bubble.png" width="72"/>
                     <img class="skill" src="https://www.freeiconspng.com/uploads/fl-studio-icon-5.png" width="72"/>
                 </div>
-            </div>
+            </section>
         </content>
-        <footer>
-            <h3>Footer</h5>
-        </footer>
+        <footer></footer>
     </body>
 </html>

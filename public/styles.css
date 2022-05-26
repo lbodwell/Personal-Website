@@ -13,18 +13,28 @@ html, body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 h2, h3, h4, h5, h6, p, svg {
     color: rgb(217, 217, 217);
 }
 
 header {
-    margin-left: 1rem;
+    padding: 1.5rem;
 }
 
 content {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #0f73ff;
 }
 
 .intro {
@@ -62,12 +72,22 @@ content {
     transform: skewY(-3deg);
 }
 
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 1rem;
+}
+
 .socials {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
-    padding-top: 125px;
-    padding-bottom: 1rem;
+    
 }
 
 .social-link {
@@ -82,7 +102,6 @@ content {
     text-align: center;
     background-color: rgb(138, 138, 138);
     padding: 0 64rem 2rem 64rem;
-    filter: drop-shadow(4px 8px 4px black);
 }
 
 .projects {
@@ -105,12 +124,12 @@ content {
 }
 
 .project-image {
-    width: 800px;
+    width: 950px;
 }
 
 .project-image > img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
 }
 
 .project-info {
@@ -232,8 +251,4 @@ content {
     border-radius: 4px;
     padding: 8px;
     filter: drop-shadow(2px 4px 2px black);
-}
-
-footer {
-    margin: 1rem;   
 }
