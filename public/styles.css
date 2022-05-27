@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 html {
@@ -8,12 +9,14 @@ html {
 html, body {
     width: 100%;
     height: 100%;
+    padding: 0;
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
 }
 
 h1 {
+    margin: 1rem;
     font-size: 36px;
 }
 
@@ -38,33 +41,43 @@ footer {
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: rgb(217, 217, 217);
     position: relative;
     text-align: center;
     background-color: #0f73ff;
-    padding: 4rem;
+    padding: 8rem 0 4rem 0;
     width: 100%;
-    height: 250px;
+    height: 300px;
 }
-
+ 
 .intro > h1 {
     font-size: 64px;
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 
 .intro-desc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: 1;
+    padding-top: 2rem;
+    max-width: 600px;
+}
+
+.intro > img {
+    z-index: 1;
+    width: 224px;
+    margin-top: 1rem;
+    border: 1px solid #272727;
+    border-radius: 8px;
+    filter: drop-shadow(2px 4px 2px black);
 }
 
 .intro::before, .intro::after {
     content: "";
     position: absolute;
-    height: 150px;
+    height: 175px;
     bottom: -100px;
     right: 0;
     left: 0;
@@ -73,11 +86,12 @@ footer {
 }
 
 .socials-container {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 125px;
+    padding-top: 4rem;
     padding-bottom: 1rem;
 }
 
@@ -87,7 +101,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    
 }
 
 .social-link {
@@ -107,15 +120,15 @@ footer {
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1rem;
 }
 
 .project {
     display: flex;
-    gap: 16px;
+    flex-direction: row;
+    gap: 1rem;
     width: auto;
     height: 525px;
-    margin-bottom: 1rem;
     padding: 0.5rem;
     background-color: #323232;
     border: 2px solid #272727;
@@ -129,7 +142,9 @@ footer {
 
 .project-image > img {
     max-width: 100%;
-    height: auto; 
+    height: 100%;
+    border: 2px solid #272727;
+    border-radius: 8px;
 }
 
 .project-info {
@@ -194,7 +209,7 @@ footer {
 
 .project-links {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.5rem;
     display: flex;
     flex-direction: row;
     gap: 4px;
@@ -216,13 +231,6 @@ footer {
 .btn:hover {
     background-color: #0c4eac;
     cursor: pointer;
-}
-
-.project img {
-    width: auto;
-    height: 100%;
-    border: 2px solid #272727;
-    border-radius: 8px;
 }
 
 .separator {
@@ -251,4 +259,99 @@ footer {
     border-radius: 4px;
     padding: 8px;
     filter: drop-shadow(2px 4px 2px black);
+}
+
+img.skill {
+    width: 64px;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .intro {
+        padding: 10rem 0 4rem 0;
+        height: 200px;
+    }
+
+    .intro > h1 {
+        font-size: 48px;
+    }
+
+    .intro-desc {
+        font-size: 12px;
+        width: 300px;
+        max-width: 600px;
+    }
+    
+    .intro > img {
+        width: 192px;
+    }
+
+    .intro::before, .intro::after {
+        height: 125px;
+        bottom: -50px;
+    }
+
+    .socials {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .social {
+        font-size: 48px;
+    }
+    
+    .project {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 337.5px;
+        height: 725px;
+        padding: 0.5rem;
+        background-color: #323232;
+        border: 2px solid #272727;
+        border-radius: 16px;
+        filter: drop-shadow(4px 8px 4px black);
+    }
+    
+    .project-image {
+        width: 325px;
+    }
+    
+    .project-info {
+        width: 325px;
+    }
+    
+    .project-title {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .project-tags {
+        width: 325px;
+    }
+    
+    .project-tag {
+        font-size: 16px;
+    }
+    
+    .project-desc {
+        font-size: 16px;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .skill {
+        font-size: 48px;
+    }
+
+    img.skill {
+        width: 48px;
+    }
 }
