@@ -265,6 +265,40 @@ img.skill {
     width: 64px;
 }
 
+@media only screen and (max-width: 1450px) {
+    .project {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 337.5px;
+        height: 725px;
+    }
+    
+    .project-image {
+        width: 325px;
+    }
+    
+    .project-info {
+        width: 325px;
+    }
+    
+    .project-title {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .project-tags {
+        width: 325px;
+    }
+    
+    .project-tag {
+        font-size: 16px;
+    }
+    
+    .project-desc {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     h1 {
         font-size: 28px;
@@ -302,49 +336,10 @@ img.skill {
     .social {
         font-size: 48px;
     }
-    
-    .project {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 337.5px;
-        height: 725px;
-        padding: 0.5rem;
-        background-color: #323232;
-        border: 2px solid #272727;
-        border-radius: 16px;
-        filter: drop-shadow(4px 8px 4px black);
-    }
-    
-    .project-image {
-        width: 325px;
-    }
-    
-    .project-info {
-        width: 325px;
-    }
-    
-    .project-title {
-        font-size: 22px;
-        margin: 0;
-    }
-
-    .project-tags {
-        width: 325px;
-    }
-    
-    .project-tag {
-        font-size: 16px;
-    }
-    
-    .project-desc {
-        font-size: 16px;
-    }
 
     .skills {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-        margin-top: 2rem;
     }
 
     .skill {
